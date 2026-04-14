@@ -13,4 +13,8 @@ authRouter.get("/get-me", authController.getMe);
 // GET /api/auth/refresh-token
 authRouter.get("/refresh-token", authController.refreshToken)
 
+
+//POST /api/auth/login
+authRouter.post("/login", authController.login);
+
 export default authRouter;
