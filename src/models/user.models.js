@@ -22,7 +22,30 @@ const userSchema = new mongoose.Schema({
     isSubscribed:{
         type: Boolean,
         default:false,
-    }
+    },
+
+    currency:{
+        type:String,
+        default: "INR",
+    },
+
+    razorpayCustomerId:{
+        type:String,
+        default:null,
+    },
+
+    razorpaySubscriptionId:{
+        type:String,
+        default:null,
+    },
+
+    SubscriptionStatus:{
+        type:String,
+        default: "inactive",
+    },
+
+
+
 })
 
 
